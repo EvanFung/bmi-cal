@@ -47,8 +47,8 @@
   display: flex;
   flex-direction: column;
   gap:32px;
-  position: absolute;
-  top:380px;
+  /*position: absolute;*/
+  /*top:380px;*/
 }
 
 .radio-container {

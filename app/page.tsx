@@ -15,7 +15,7 @@ export default function Home() {
                     </p>
                 </div>
             </div>
-            <div className='intro-form w-11/12 min-h-[455px] p-6'>
+            <div className='intro-form w-11/12 p-6 mt-8'>
                 <div className='form-title'>
                     <h1 className='font-semibold'>Enter your details below</h1>
                 </div>

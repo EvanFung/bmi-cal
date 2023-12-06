@@ -49,7 +49,7 @@ export default function Home() {
         </section>
           <section className='explanation'>
               <img src="/image-man-eating.webp" alt="man-eating-food" />
-              <div className='w-11/12'>
+              <div className='w-11/12 bmi-explanation'>
                   <h2 className='text-2xl font-bold mt-8 mb-8'>What your BMI result means</h2>
                   <p className='text-light text-base text-gray-400'>
                       A BMI range of 18.5 to 24.9 is considered a &#39;healthy weight&#39;.

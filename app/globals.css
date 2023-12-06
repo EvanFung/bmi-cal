@@ -291,7 +291,7 @@ input:hover {
     position: absolute;
     top: 55px;
     right:20px;
-    font-size: var(--BodyM);
+    font-size: var(--HeadingM);
     color: #345ff6;
     font-weight: 600;
   }

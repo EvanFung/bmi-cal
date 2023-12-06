@@ -10,7 +10,7 @@ export default function Home() {
                 </div>
                 <div className='w-11/12 mx-auto intro-words-item lg:w-full'>
                     <h1 className='font-semibold text-5xl text-center mt-5' id="intro-title">Body Mass Index Calculator</h1>
-                    <p className='text-center mt-5 font-light text-base text-gray-400'>
+                    <p className='text-center mt-5 font-light text-base text-gray-9  00'>
                         Better understand your weight in relation to your height using our body mass index (BM) calculator. While BMI is not the sole determinant of a healthy weight, it offers a valuable starting point to evaluate your overall health and well-being.
                     </p>
                 </div>
@@ -22,11 +22,11 @@ export default function Home() {
                     <div className='radio-container'>
                         <div className='metric-radio'>
                             <input type="radio" name='metricOrImperial' value='metric' />
-                            <label htmlFor="metric">Metric</label>
+                            <label>Metric</label>
                         </div>
                         <div className='metric-radio'>
                             <input type="radio" name='metricOrImperial' value='imperial' />
-                            <label htmlFor="imperial">Imperial</label>
+                            <label>Imperial</label>
                         </div>
                     </div>
                     <div className='metric-text-input-group'>
@@ -47,6 +47,9 @@ export default function Home() {
                     </div>
             </div>
         </section>
+          <div className='left-curve-line hidden'>
+              <img src='/pattern-curved-line-left.svg' alt='left-curve-line' />
+          </div>
           <section className='explanation'>
               <img src="/image-man-eating.webp" alt="man-eating-food" />
               <div className='w-11/12 bmi-explanation'>
@@ -64,7 +67,7 @@ export default function Home() {
           </section>
           <section className='healthy-living-style mt-16 mx-auto'>
               <div className='living-style-container'>
-                <div className='living-style-item'>
+                <div className='living-style-item mt-8'>
                     <img src='/icon-eating.svg' alt='icon-eating' />
                         <h2 className='text-2xl font-semibold'>Healthy eating</h2>
                         <p className='text-light text-gray-400'>
@@ -89,7 +92,7 @@ export default function Home() {
           </section>
 
 
-          <section className='limitation w-10/12 mx-auto mt-8 mb-8'>
+          <section id='small-device-limitation' className='limitation w-11/12 mx-auto mt-8 mb-8'>
               <div className='limitation-intro'>
                   <h2 className='font-semibold text-2xl text-center'>Limitations of BMI</h2>
                   <p className='font-light text-gray-600'>
@@ -130,6 +133,79 @@ export default function Home() {
                           BMI may misclassify muscular individuals as overweight or obese, as it doesn't differentiate muscle from fat.
                       </p>
                   </div>
+                  <div className='limitation-item'>
+                      <div className='limitation-content'>
+                          <div className='limitation-title'>
+                              <img src='/icon-pregnancy.svg' alt='gender' />
+                              <h5 className='font-semibold text-[20px]'>Pregnancy</h5>
+                          </div>
+                      </div>
+                      <p className='font-light text-gray-600'>
+                          Expectant mothers experience weight gain due to their growing baby. Maintaining a healthy pre-pregnancy BMI is advisable to minimise health risks for both mother and child.
+                      </p>
+                  </div>
+                  <div className='limitation-item'>
+                      <div className='limitation-content'>
+                          <div className='limitation-title'>
+                              <img src='/icon-race.svg' alt='gender' />
+                              <h5 className='font-semibold text-[20px]'>Race</h5>
+                          </div>
+                      </div>
+                      <p className='font-light text-gray-600'>
+                          Certain health concerns may affect individuals of some Black and Asian origins at lower BMIs than others. To learn more, it is advised to discuss this with your GP or practice nurse.
+                      </p>
+                  </div>
+              </div>
+          </section>
+
+          <section id='large-device-limitation' className='limitation w-11/12 mx-auto mt-8 mb-8'>
+              <div className='first-row-limitation'>
+                  <div className='limitation-intro'>
+                      <h2 className='font-semibold text-2xl text-center'>Limitations of BMI</h2>
+                      <p className='font-light text-gray-600'>
+                          Although BMI is often a practical indicator of healthy weight, it is not suited for every person. Specific groups should carefully consider their BMI outcomes, and in certain cases, the measurement may not be beneficial to use.
+                      </p>
+                  </div>
+                  <div className='limitation-item'>
+                      <div className='limitation-content'>
+                          <div className='limitation-title'>
+                              <img src='/icon-gender.svg' alt='gender' />
+                              <h5 className='font-semibold text-[20px]'>Gender</h5>
+                          </div>
+                      </div>
+                      <p className='font-light text-gray-600'>
+                          The development and body fat composition of girls and boys vary with age. Consequently, a child's age and gender are considered when evaluating their BMI.
+                      </p>
+                  </div>
+              </div>
+              <div className='second-row-limitation'>
+                  <div className='curve-line-right-container'>
+                      <img src='/pattern-curved-line-right.svg' alt='curve-line-right' />
+                  </div>
+                  <div className='limitation-item'>
+                      <div className='limitation-content'>
+                          <div className='limitation-title'>
+                              <img src='/icon-age.svg' alt='gender' />
+                              <h5 className='font-semibold text-[20px]'>Age</h5>
+                          </div>
+                      </div>
+                      <p className='font-light text-gray-600'>
+                          In aging individuals, increased body fat and muscle loss may cause BMI to underestimate body fat content.
+                      </p>
+                  </div>
+                  <div className='limitation-item'>
+                      <div className='limitation-content'>
+                          <div className='limitation-title'>
+                              <img src='/icon-muscle.svg' alt='gender' />
+                              <h5 className='font-semibold text-[20px]'>Muscle</h5>
+                          </div>
+                      </div>
+                      <p className='font-light text-gray-600'>
+                          BMI may misclassify muscular individuals as overweight or obese, as it doesn't differentiate muscle from fat.
+                      </p>
+                  </div>
+              </div>
+              <div className='third-row-limitation'>
                   <div className='limitation-item'>
                       <div className='limitation-content'>
                           <div className='limitation-title'>

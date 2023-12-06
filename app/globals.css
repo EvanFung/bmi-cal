@@ -152,7 +152,9 @@ input:hover {
   width: 64px;
   height: 64px;
 }
-
+#large-device-limitation {
+  display: none;
+}
 .limitation {
   display: flex;
   flex-direction: column;
@@ -208,8 +210,11 @@ input:hover {
   }
   .bmi-explanation p {
     font-size: medium;
+    text-align: center;
   }
-
+  #large-device-limitation {
+    display: none;
+  }
   .limitation-item-container {
     display: flex;
     flex-direction: row;
@@ -226,7 +231,7 @@ input:hover {
 @media only screen and (min-width: 1281px){
   .intro {
     margin: 0;
-    height: 737px;
+    height: 900px;
     display: block;
     background: white;
   }
@@ -241,6 +246,7 @@ input:hover {
     width: 64px;
     height: 64px;
     margin-left: 10%;
+    margin-top: 10%;
   }
   .logo-img {
     display: flex;
@@ -270,7 +276,112 @@ input:hover {
     width: 564px;
     position: absolute;
     min-height: 448px;
-    top:50px;
+    top:20%;
     right:15%;
   }
+  .left-curve-line {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+  }
+  .left-curve-line img {
+    margin-right: 15%;
+    overflow-clip: clip;
+  }
+  .explanation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 2rem;
+    gap: 2rem;
+    align-items: flex-end;
+    margin: 0;
+    width: 90%;
+    height: 533px;
+    margin: auto;
+  }
+  .explanation img[alt="man-eating-food"] {
+    width: 564px;
+    height: 533px;
+  }
+  .bmi-explanation {
+
+  }
+  .explanation h2 {
+    font-size: var(--HeadingL);
+    letter-spacing: -.05em;
+    margin-bottom: 2rem;
+  }
+  .explanation p {
+    font-size: var(--BodyM);
+    color: var(--DarkElectricBlue);
+    width: 100%;
+  }
+  .living-style-container {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+  }
+  .living-style-item {
+    flex-grow: 1;
+    height: 234px;
+    margin-bottom: 2rem;
+  }
+  #small-device-limitation {
+    display: none;
+  }
+  #large-device-limitation {
+    display: flex;
+    margin-top: 5rem;
+  }
+  .limitation-item {
+    width: 365px;
+  }
+  .first-row-limitation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .first-row-limitation .limitation-item {
+    margin-right: 10rem;
+  }
+  .limitation-intro {
+    display: flex;
+    width: 45%;
+    align-items: flex-start;
+  }
+  .limitation-intro h2 {
+    font-size: var(--HeadingL);
+  }
+  .limitation-intro p {
+    font-size: var(--BodyM);
+    width: 70%;
+    color: var(--DarkElectricBlue);
+  }
+  .second-row-limitation {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 4rem;
+    gap: 3rem;
+
+  }
+  .second-row-limitation .limitation-item {
+    align-items: flex-start;
+  }
+  .curve-line-right-container {
+    width: 65%;
+    display: flex;
+    justify-content: center;
+  }
+  .third-row-limitation {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    gap: 4rem;
+    margin-top: 4rem;
+  }
+
 }

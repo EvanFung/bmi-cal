@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import MetricForm from "@/app/components/MetricForm";
 
 export default function Home() {
   return (
@@ -15,37 +16,7 @@ export default function Home() {
                     </p>
                 </div>
             </div>
-            <div className='intro-form w-11/12 p-6 mt-8'>
-                <div className='form-title'>
-                    <h1 className='font-semibold text-xl'>Enter your details below</h1>
-                </div>
-                    <div className='radio-container'>
-                        <div className='metric-radio'>
-                            <input type="radio" name='metricOrImperial' value='metric' />
-                            <label>Metric</label>
-                        </div>
-                        <div className='metric-radio'>
-                            <input type="radio" name='metricOrImperial' value='imperial' />
-                            <label>Imperial</label>
-                        </div>
-                    </div>
-                    <div className='metric-text-input-group'>
-                            <label htmlFor="height">Height</label>
-                            <input className='min-w-full' type="text" name="height" id="height" placeholder="0" />
-                            <span id="textCM">CM</span>
-                    </div>
-                    <div className='metric-text-input-group'>
-                        <label htmlFor="weight">Weight</label>
-                        <input className='min-w-full' type="text" name="weight" id="weight" placeholder="0" />
-                        <span id="textKG">KG</span>
-                    </div>
-                    <div className='welcome-container'>
-                        <div className='welcome-btn'>
-                            <h4 className='text-center text-white font-bold text-2xl'>Welcome!</h4>
-                            <p className='text-center text-white'>Enter your height and weight and you will see your BMI result here</p>
-                        </div>
-                    </div>
-            </div>
+            <MetricForm />
         </section>
           <div className='left-curve-line hidden'>
               <img src='/pattern-curved-line-left.svg' alt='left-curve-line' />

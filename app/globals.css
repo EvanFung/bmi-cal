@@ -95,12 +95,40 @@
   gap: 8px;
   font-size: var(--BodyS);
   position:relative;
+  margin-top: 0.5rem;
+
 }
+.imperial-input-group {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  font-size: var(--BodyS);
+  position:relative;
+  margin-top: 0.5rem;
+
+}
+#ft, #st, #in {
+  position: relative;
+  top: 25px;
+  right:40px;
+  font-size: var(--BodyM);
+  color: #345ff6;
+  font-weight: 600;
+}
+#lbs {
+  position: relative;
+  top: 25px;
+  right:50px;
+  font-size: var(--BodyM);
+  color: #345ff6;
+  font-weight: 600;
+}
+
 #textKG, #textCM{
   position: absolute;
   top: 55px;
-  right:35px;
-  font-size: var(--HeadingM);
+  right:20px;
+  font-size: var(--BodyM);
   color: #345ff6;
   font-weight: 600;
 }
@@ -114,6 +142,20 @@ input[type="text"] {
   border-radius: 12px;
   padding: 20px 24px;
   font-weight: 600;
+  margin-top: 0.2rem;
+
+}
+.imperial-input-group input[type="text"] {
+  font-weight: var(--Regular);
+  height: 69px;
+  max-width: 45%;
+  letter-spacing: -0.05em;
+  font-size: var(--HeadingM);
+  border: 1px solid var(--Border);
+  border-radius: 12px;
+  padding: 20px 24px;
+  font-weight: 600;
+  margin-top: 0.2rem;
 }
 input:hover {
   cursor: pointer;
@@ -210,7 +252,7 @@ input:hover {
   }
   .bmi-explanation p {
     font-size: medium;
-    text-align: center;
+    text-align: left;
   }
   #large-device-limitation {
     display: none;
@@ -234,6 +276,24 @@ input:hover {
     height: 900px;
     display: block;
     background: white;
+  }
+  #ft, #st, #in {
+    font-size: var(--HeadingM);
+    top:18px;
+    right:48px;
+  }
+  #lbs {
+    right: 60px;
+    font-size: var(--HeadingM);
+  }
+
+  #textKG, #textCM{
+    position: absolute;
+    top: 55px;
+    right:20px;
+    font-size: var(--BodyM);
+    color: #345ff6;
+    font-weight: 600;
   }
   .intro-words {
     display: block;

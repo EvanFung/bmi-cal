@@ -108,7 +108,7 @@ export default function Home() {
                           </div>
                       </div>
                       <p className='font-light text-gray-600'>
-                          The development and body fat composition of girls and boys vary with age. Consequently, a child's age and gender are considered when evaluating their BMI.
+                          The development and body fat composition of girls and boys vary with age. Consequently, a child&#39;s age and gender are considered when evaluating their BMI.
                       </p>
                   </div>
                   <div className='limitation-item'>
@@ -130,7 +130,7 @@ export default function Home() {
                           </div>
                       </div>
                       <p className='font-light text-gray-600'>
-                          BMI may misclassify muscular individuals as overweight or obese, as it doesn't differentiate muscle from fat.
+                          BMI may misclassify muscular individuals as overweight or obese, as it doesn&#39;t differentiate muscle from fat.
                       </p>
                   </div>
                   <div className='limitation-item'>
@@ -174,7 +174,7 @@ export default function Home() {
                           </div>
                       </div>
                       <p className='font-light text-gray-600'>
-                          The development and body fat composition of girls and boys vary with age. Consequently, a child's age and gender are considered when evaluating their BMI.
+                          The development and body fat composition of girls and boys vary with age. Consequently, a child&#39;s age and gender are considered when evaluating their BMI.
                       </p>
                   </div>
               </div>
@@ -201,7 +201,7 @@ export default function Home() {
                           </div>
                       </div>
                       <p className='font-light text-gray-600'>
-                          BMI may misclassify muscular individuals as overweight or obese, as it doesn't differentiate muscle from fat.
+                          BMI may misclassify muscular individuals as overweight or obese, as it doesn&#39;t differentiate muscle from fat.
                       </p>
                   </div>
               </div>

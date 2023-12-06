@@ -198,7 +198,7 @@ input:hover {
     justify-content: center;
     padding: 2rem;
     gap: 2rem;
-    align-items: end;
+    align-items: flex-end;
   }
   .explanation img[alt="man-eating-food"] {
     width:56%;
@@ -220,5 +220,57 @@ input:hover {
   }
   .limitation-item {
     width: 45%;
+  }
+}
+/* Large devices (landscape PC), 1281 and up */
+@media only screen and (min-width: 1281px){
+  .intro {
+    margin: 0;
+    height: 737px;
+    display: block;
+    background: white;
+  }
+  .intro-words {
+    display: block;
+    width: 70.7%;
+    height: 100%;
+    background: linear-gradient(290.1deg, #D6E6FE 0%, rgba(214, 252, 254, 0) 100%);
+    border-radius: 0 0 35px 35px;
+  }
+  #logo {
+    width: 64px;
+    height: 64px;
+    margin-left: 10%;
+  }
+  .logo-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .intro-words-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 5rem;
+  }
+  .intro-words-item h1 {
+    font-size: 64px;
+    text-align: start;
+    margin-left: 10%;
+    max-width: 45%;
+  }
+  .intro-words-item p {
+    text-align: start;
+    width: 35%;
+    margin-left: 10%;
+  }
+  .intro-form {
+    width: 564px;
+    position: absolute;
+    min-height: 448px;
+    top:50px;
+    right:15%;
   }
 }
